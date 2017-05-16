@@ -1,0 +1,10 @@
+[Unit]
+Description=Smart humidor LCD
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sh-lcd
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+time:
+  level: 0
+
+sensor22:
+  alias: top
+  level: 1
+sensor23:
+  alias: mid
+  level: 2
+sensor24:
+  alias: bot
+  level: 3
+

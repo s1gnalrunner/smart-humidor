@@ -1,0 +1,28 @@
+carbon:
+  host: 127.0.0.1
+  port: 2003
+
+graphite:
+  url: http://127.0.0.1:8000/
+  query: humidor.*.*.trim
+  range: 3min
+
+sensors:
+  - pin: 0
+    level: 0
+
+  - pin: 22
+    name: top
+    level: 1
+    trim:
+      humidity: 3
+  - pin: 23
+    name: mid
+    level: 2
+    trim:
+      humidity: 1.8
+  - pin: 24
+    name: bot
+    level: 3
+    trim:
+      humidity: 8.9

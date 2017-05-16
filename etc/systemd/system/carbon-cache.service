@@ -1,0 +1,11 @@
+[Unit]
+Description = Carbon cache
+
+[Service]
+Type = forking
+GuessMainPID = false
+PIDFile = /var/run/carbon-cache-a.pid
+ExecStart = /opt/graphite/bin/carbon-cache.py --config=/etc/carbon/carbon.conf start
+
+[Install]
+WantedBy = multi-user.target

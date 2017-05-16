@@ -1,0 +1,11 @@
+[Unit]
+Description=Smart humidor metrics on GPIO %I
+After=carbon-cache.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sh-sensor %I
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
